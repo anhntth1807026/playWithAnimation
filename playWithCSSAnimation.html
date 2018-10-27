@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #div1 {
+            width: 100px;
+            height: 50px;
+            background-color: white;
+            font-weight: bold;
+            position: relative;
+            -webkit-animation: mymove 1s infinite;
+            animation: mymove 1s infinite;
+        }
+
+        #div2 {
+            width: 100px;
+            height: 50px;
+            background-color: white;
+            font-weight: bold;
+            position: relative;
+            -webkit-animation: mymove2 1s infinite;
+            animation: mymove2 1s infinite;
+        }
+
+        #div1 {-webkit-animation-timing-function: linear;}
+
+        #div1 {animation-timing-function: linear;}
+
+        #div2 {-webkit-animation-timing-function: linear;}
+
+        #div2 {animation-timing-function: linear;}
+
+        @-webkit-keyframes mymove {
+            from {left: 70%;}
+            to {left: 15%;}
+            100% {background-color:red; left:0px; right:0px;}
+        }
+
+        @keyframes mymove {
+            from {left: 70%;}
+            to {left: 15%;}
+        }
+
+        @-webkit-keyframes mymove2 {
+            from {right: 70%;}
+            to {right: 15%;}
+            100% {background-color:red; left:0px; right:0px;}
+        }
+
+        @keyframes mymove2 {
+            from {right: 70%;}
+            to {right: 15%;}
+        }
+    </style>
+</head>
+<body>
+
+<div id="div1"><img src="http://hinhnendepnhat.net/wp-content/uploads/2017/07/hinh-dong-de-thuong-chu-lon-kute.gif" alt="chú lợn quay" ><div>
+
+<div id="div2"><img src="http://hinhnendepnhat.net/wp-content/uploads/2017/07/hinh-dong-de-thuong-chu-lon-kute.gif" alt="chú lợn quay" ><div>
+
+</body>
+</html>
